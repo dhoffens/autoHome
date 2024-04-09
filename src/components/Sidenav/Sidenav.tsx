@@ -6,12 +6,18 @@ import {
   Link
 } from "react-router-dom";
 import './Sidenav.scss';
+import { Home } from "../Home/Home";
+import { MaintenanceSchedule } from "../MaintenanceSchedule/MaintenanceSchedule";
+import { ExpenseTracker } from "../ExpenseTracker/ExpenseTracker";
+import { ProjectPlanner } from "../ProjectPlanner/ProjectPlanner";
+import { EmergencyPreparedness } from "../EmergencyPreparedness/EmergencyPreparedness";
+import { UtilityManagement } from "../UtilityManagement/UtilityManagement";
+import { DocumentStorage } from "../DocumentStorage/DocumentStorage";
 
 interface RouteConfig {
     path: string;
     exact?: boolean;
     name: string;
-    // sidebar: () => JSX.Element;
     main: () => JSX.Element;
   }
 
@@ -20,37 +26,37 @@ const routes: RouteConfig[] = [
         path: "/",
         exact: true,
         name: "Home",
-        main: () => <h2>Home</h2>
+        main: () => <Home />
     },
     {
         path: "/maintenance-schedule",
         name: "Maintenance Schedule",
-        main: () => <h2>Maintenance Schedule</h2>
+        main: () => <MaintenanceSchedule />
     },
     {
         path: "/expense-tracker",
         name: "Expense Tracker",
-        main: () => <h2>Expense Tracker</h2>
+        main: () => <ExpenseTracker />
     },
     {
         path: "/project-planner",
         name: "Project Planner",
-        main: () => <h2>Project Planner</h2>
+        main: () => <ProjectPlanner />
     },
     {
         path: "/emergency-preparedness",
         name: "Emergency Preparedness",
-        main: () => <h2>Emergency Preparedness</h2>
+        main: () => <EmergencyPreparedness />
     },
     {
         path: "/utlity-management",
         name: "Utility Management",
-        main: () => <h2>Utility Management</h2>
+        main: () => <UtilityManagement />
     },
     {
         path: "/document-storage",
         name: "Document Storage",
-        main: () => <h2>Document Storage</h2>
+        main: () => <DocumentStorage />
     }
   ];
 
