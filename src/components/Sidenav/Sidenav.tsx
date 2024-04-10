@@ -49,7 +49,7 @@ const routes: RouteConfig[] = [
         main: () => <EmergencyPreparedness />
     },
     {
-        path: "/utlity-management",
+        path: "/utility-management",
         name: "Utility Management",
         main: () => <UtilityManagement />
     },

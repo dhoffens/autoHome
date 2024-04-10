@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.css';
+import styles from './Header.module.scss';
 
 export type HeaderProps = {
     title: string;
@@ -8,10 +8,9 @@ export type HeaderProps = {
 
 const Header: React.FC<HeaderProps> = ({ title }) => {
     return (
-        <header className='header'>
-            <img className='logo' src='./favicon.svg' alt='logo' />
-            <h1 className='title'>{title}</h1>
-            {/* <p className='desc'>{description}</p> */}
+        <header className={styles.header}>
+            <img className={styles.logo} src='./favicon.svg' alt='logo' />
+            <h1 className={styles.title}>{title}</h1>
         </header>
     );
 }

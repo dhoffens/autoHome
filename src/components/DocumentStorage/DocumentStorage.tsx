@@ -1,6 +1,10 @@
-import './DocumentStorage.scss';
+import styles from './DocumentStorage.module.scss';
 import React from 'react';
 
 export const DocumentStorage: React.FC = () => {
-  return <div className="document-storage">DocumentStorage</div>;
+  return ( 
+    <div>
+        <h2 className={styles.title}>Document Storage</h2>
+    </div>
+  );
 };

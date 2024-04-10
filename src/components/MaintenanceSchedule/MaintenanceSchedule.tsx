@@ -1,8 +1,10 @@
-import './MaintenanceSchedule.scss';
+import styles from './MaintenanceSchedule.module.scss';
 import React from 'react';
 
 export const MaintenanceSchedule: React.FC = () => {
   return (
-    <div>Maintenance Schedule</div>
+    <div>
+      <h2 className={styles.title}>Maintenance Schedule</h2>
+    </div>
   );
 };
