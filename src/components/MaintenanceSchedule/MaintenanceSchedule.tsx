@@ -8,27 +8,37 @@ const localizer = momentLocalizer(moment);
 
 const events = [
   {
-    title: 'All Day Event',
-    start: new Date(2021, 1, 1),
-    end: new Date(2021, 1, 1),
+    title: 'HVAC maintenance',
+    start: new Date(2024, 3, 2),
+    end: new Date(2024, 3, 2),
+  },
+  {
+    title: 'Gutter cleaning',
+    start: new Date(2024, 3, 8),
+    end: new Date(2024, 3, 8),
+  },
+  {
+    title: 'Lawn care',
+    start: new Date(2024, 3, 14),
+    end: new Date(2024, 3, 14),
   },
 ];
-
-const MyCalendar = () => (
-  <Calendar
-    localizer={localizer}
-    events={events}
-    startAccessor="start"
-    endAccessor="end"
-    style={{ height: 1000 }}
-  />
-)
 
 export const MaintenanceSchedule: React.FC = () => {
   return (
     <div>
       <h2 className={styles.title}>Maintenance Schedule</h2>
-      <MyCalendar />
+      <Calendar
+        localizer={localizer}
+        events={events}
+        startAccessor="start"
+        endAccessor="end"
+        style={{ 
+          height: 1000,
+          background: 'gray'
+
+         }}
+      />
     </div>
   );
 };
