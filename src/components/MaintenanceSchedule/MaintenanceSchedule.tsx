@@ -22,6 +22,11 @@ const events = [
     start: new Date(2024, 3, 14),
     end: new Date(2024, 3, 14),
   },
+  {
+    title: 'Grass cut',
+    start: new Date(2024, 3, 12),
+    end: new Date(2024, 3, 12),
+  },
 ];
 
 export const MaintenanceSchedule: React.FC = () => {
