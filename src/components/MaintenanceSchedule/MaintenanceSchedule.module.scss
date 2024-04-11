@@ -1,5 +1,42 @@
+@import 'react-big-calendar/lib/sass/styles';
+
 .title {
-    font-size: 36px;
+    font-size: 40px;
     text-align: center;
-    text-decoration: underline;
+}
+
+.calendarContainer {
+    padding: 5px;
+
+    :global {
+        .rbc-toolbar {
+
+            .rbc-btn-group {
+    
+                button {
+                    color: black;
+                    background-color: whitesmoke;   
+                    font-weight: 600;
+                    font-size: 16px;
+                    padding: 0.5rem 1rem;
+                    border-radius: 4px;
+                    margin: 0 0.1rem;
+                }
+
+                button:hover {
+                    color: whitesmoke;
+                    background-color: black;
+                    transition: 300ms;
+                } 
+            }
+        }
+
+        .rbc-today {
+            background-color: #3e3e3e;
+        }
+    }
+    
+    .calendar {
+        height: 1000px;
+    }
 }

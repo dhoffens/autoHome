@@ -10,9 +10,9 @@ import { Home } from "../Home/Home";
 import { MaintenanceSchedule } from "../MaintenanceSchedule/MaintenanceSchedule";
 import { ExpenseTracker } from "../ExpenseTracker/ExpenseTracker";
 import { ProjectPlanner } from "../ProjectPlanner/ProjectPlanner";
-import { EmergencyPreparedness } from "../EmergencyPreparedness/EmergencyPreparedness";
 import { UtilityManagement } from "../UtilityManagement/UtilityManagement";
-import { DocumentStorage } from "../DocumentStorage/DocumentStorage";
+// import { DocumentStorage } from "../DocumentStorage/DocumentStorage";
+// import { EmergencyPreparedness } from "../EmergencyPreparedness/EmergencyPreparedness";
 
 interface RouteConfig {
     path: string;
@@ -44,20 +44,21 @@ const routes: RouteConfig[] = [
         main: () => <ProjectPlanner />
     },
     {
-        path: "/emergency-preparedness",
-        name: "Emergency Preparedness",
-        main: () => <EmergencyPreparedness />
-    },
-    {
         path: "/utility-management",
         name: "Utility Management",
         main: () => <UtilityManagement />
     },
-    {
-        path: "/document-storage",
-        name: "Document Storage",
-        main: () => <DocumentStorage />
-    }
+    // coming soon ...
+    // {
+    //     path: "/emergency-preparedness",
+    //     name: "Emergency Preparedness",
+    //     main: () => <EmergencyPreparedness />
+    // },
+    // {
+    //     path: "/document-storage",
+    //     name: "Document Storage",
+    //     main: () => <DocumentStorage />
+    // }
   ];
 
 const Sidenav: React.FC = () => {

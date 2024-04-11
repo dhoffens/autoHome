@@ -1,11 +1,10 @@
-import styles from './MaintenanceSchedule.module.scss';
 import React from 'react';
-import 'react-big-calendar/lib/sass/styles.scss';
-import { Calendar, momentLocalizer } from 'react-big-calendar';
 import moment from 'moment';
+import { Calendar, momentLocalizer } from 'react-big-calendar';
+import 'react-big-calendar/lib/sass/styles.scss';
+import styles from './MaintenanceSchedule.module.scss';
 
 const localizer = momentLocalizer(moment);
-
 const events = [
   {
     title: 'HVAC maintenance',
@@ -33,17 +32,15 @@ export const MaintenanceSchedule: React.FC = () => {
   return (
     <div>
       <h2 className={styles.title}>Maintenance Schedule</h2>
-      <Calendar
-        localizer={localizer}
-        events={events}
-        startAccessor="start"
-        endAccessor="end"
-        style={{ 
-          height: 1000,
-          background: 'gray'
-
-         }}
-      />
+      <div className={styles.calendarContainer}>
+        <Calendar
+          localizer={localizer}
+          events={events}
+          startAccessor="start"
+          endAccessor="end"
+          className={styles.calendar}
+        />
+      </div>
     </div>
   );
 };

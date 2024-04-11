@@ -1,15 +1,18 @@
 .sidenav {
-    padding: 10px;
-    width: 10%;
+    padding: 0 1.25rem;
+    width: 12%;
     height: 90vh;
 
     .list {
-        list-style-type: disc;
+        list-style-type: none;
         padding: 0;
 
         .listItem {
+            
+            padding: 0.5rem 0;
+
             .routerLink {
-                font-size: 30;
+                font-size: 20px;
             }
         }
     }
